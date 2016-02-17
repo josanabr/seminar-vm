@@ -7,7 +7,7 @@ Requirements
 In order to use this `Vagrantfile` is necessary 
 
 * Install [Vagrant](http://www.vagrantup.com)
-* Download the proper Vagrant image, `vagrant box add base https://atlas.hashicorp.com/ubuntu/boxes/trusty64`
+* Download the proper Vagrant image, `vagrant box add https://atlas.hashicorp.com/ubuntu/boxes/trusty64`
 
 Run it
 ------
