@@ -60,4 +60,5 @@ echo "Creating the '${USER}' user"
 # http://askubuntu.com/questions/94060/run-adduser-non-interactively
 useradd -m -p "paM.CJX3dGIs6" -s /bin/bash ${USER} # passwd 'hpuser'
 usermod -aG sudo ${USER}
+usermod -aG docker ${USER} # adding ${USER} to docker group
 sudo -H -u hpuser bash -c "mkdir ${USERHOME}/.ssh; ssh-keygen -f ${USERHOME}/.ssh/id_rsa  -t rsa -N ''; cat ${USERHOME}/.ssh/id_rsa.pub >> ${USERHOME}/.ssh/authorized_keys"
